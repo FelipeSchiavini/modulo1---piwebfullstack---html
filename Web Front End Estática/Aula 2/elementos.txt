@@ -1,0 +1,11 @@
+Elementos de bloco (quebram linha)
+div - quebra de linha
+h1 - h6 - titulos
+p - paragrafos
+
+Elementos de linha (ficam um do lado do outro)
+img - imagem
+button - botao
+span - elemento generico inline
+strong - Negrito
+em - itálico
