@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="." method="GET">
+      <div>
+        <label for="username">Nome de usuário:</label>
+        <input
+          type="text"
+          name="nome"
+          id="username"
+          placeholder="ex: fulano123"
+        />
+      </div>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" />
+
+      <div>
+        <label for="password">Sua senha:</label>
+        <input
+          type="password"
+          name="senha"
+          id="password"
+          placeholder="*********"
+        />
+      </div>
+
+      <div>
+        <div>Escolaridade:</div>
+        <input
+          type="radio"
+          name="escolaridade"
+          id="scholarity1"
+          value="Fundamental"
+        />
+        <label for="scholarity1">Fundamental</label>
+
+        <input
+          type="radio"
+          name="escolaridade"
+          id="scholarity2"
+          value="Medio"
+        />
+        <label for="scholarity2">Medio</label>
+
+        <input
+          type="radio"
+          name="escolaridade"
+          id="scholarity3"
+          value="Superior"
+        />
+        <label for="scholarity3">Superior</label>
+
+        <input
+          type="radio"
+          name="escolaridade"
+          id="scholarity4"
+          value="Doutorado"
+        />
+        <label for="scholarity4">Doutorado</label>
+      </div>
+
+      <div>
+        <div>Quais esportes pratica?</div>
+
+        <input type="checkbox" name="esportes" id="sports1" value="Vôlei" />
+        <label for="sports1">Vôlei</label>
+
+        <input type="checkbox" name="esportes" id="sports2" value="Futebol" />
+        <label for="sports1">Futebol</label>
+
+        <input type="checkbox" name="esportes" id="sports3" value="Natação" />
+        <label for="sports1">Natação</label>
+      </div>
+
+      <div>
+        <label for="observation">Comentário</label>
+      </div>
+      <textarea
+        name="observacao"
+        id="observation"
+        cols="30"
+        rows="3"
+      ></textarea>
+
+      <div>
+        <label for="birthday">Entre com sua data de nascimento</label>
+        <input type="date" name="dataDeNascimento" id="birthday" />
+      </div>
+
+      <div>
+        <label for="appointment">Horário do agendamento:</label>
+        <input type="datetime-local" name="agendamento" id="appointment" />
+      </div>
+
+      <div>
+        <label for="color">Escolha uma cor</label>
+        <input type="color" name="cor" id="color" />
+      </div>
+
+      <div>
+        <label for="avatar">Entre com sua foto de perfil</label>
+        <input type="file" name="avatar" id="avatar" />
+      </div>
+
+      <div>
+        <button>cadastrar</button>
+      </div>
+    </form>
+  </body>
+</html>
