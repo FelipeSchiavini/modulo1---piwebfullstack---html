@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <h1>Formulário para cadastro de livros no e-commerce do fulano:</h1>
+
+    <!-- Formulário de cadastro -->
+    <form>
+    
+    <!-- título do livro -->
+    <div>
+      <label for="titulo-livro">Título:</label>
+      <input
+        type="text"
+        name="titulo-livro"
+        id="titulo-livro"
+        placeholder="Ex. Harry Potter"
+      />
+    </div>
+
+    <!-- Ano de publicação -->
+    <div>
+      <label for="ano-publicacao">Ano de Publicação:</label>
+      <input
+        type="number"
+        name="ano-publicacao"
+        id="ano-publicacao"
+        value="2021"
+      />
+    </div>
+
+    <!-- Ano de edição -->
+    <div>
+      <label for="ano-edicao">Número da Edição:</label>
+      <input type="number" name="ano-edicao" id="ano-edicao" value="1" />
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label for="email">Email do Editor:</label>
+      <input type="email" name="email" id="email" />
+    </div>
+
+    <!-- Upload da foto -->
+    <div>
+      <label for="foto">Foto:</label>
+      <input type="file" name="foto" id="foto" />
+    </div>
+
+    <!-- Nome do Autor -->
+    <div>
+      <label for="nome-autor">Nome do Autor</label>
+      <input type="text" name="nome-autor" id="nome-autor" />
+    </div>
+
+    <!-- Data de Nascimento -->
+    <div>
+      <label for="data-nascimento">Data de Nascimento do autor</label>
+      <input type="date" name="data-nascimento" id="data-nascimento" />
+    </div>
+
+    <!-- Checkbox com tipos de livro disponível -->
+    <div>
+      <br />
+      <div>Tipos diponivel:</div>
+      <ul>
+        <li>
+          <input
+            type="checkbox"
+            name="formato-diponivel"
+            id="fomato1"
+            value="Capa normal"
+          />
+          <label for="formato-diponivel">Capa normal</label>
+        </li>
+
+        <li>
+          <input
+            type="checkbox"
+            name="formato-diponivel"
+            id="fomato2"
+            value="Capa dura"
+          />
+          <label for="formato-diponivel">Capa dura</label>
+        </li>
+
+        <li>
+          <input
+            type="checkbox"
+            name="formato-diponivel"
+            id="fomato3"
+            value="e-book"
+          />
+          <label for="formato-diponivel">e-book</label>
+        </li>
+      </ul>
+    </div>
+        <div>
+            <button>cadastrar</button>
+        </div>
+    </form>
+  </body>
+</html>
