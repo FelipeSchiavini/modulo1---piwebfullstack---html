@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page do Google</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      body {
+        min-height: 100vh;
+      }
+
+      body,
+      input,
+      button,
+      a {
+        font-family: arial, sans-serif;
+      }
+
+      input {
+        font-size: 16px;
+        border: 1px solid #dfe1e5;
+        border-radius: 24px;
+        display: block;
+        margin: auto auto 18px;
+        width: 482px;
+        height: 39px;
+        outline: none;
+        padding: 0 12px;
+      }
+
+      nav {
+        font-size: 13px;
+      }
+
+      button {
+        font-size: 14px;
+      }
+
+      header {
+        padding: 15px;
+      }
+
+      main {
+        text-align: center;
+        margin: calc(50vh - 70px - 100px) 0 calc(50vh - 98px - 100px) 0;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        display: inline-block;
+      }
+
+      button {
+        border: none;
+      }
+
+      nav {
+        text-align: right;
+      }
+
+      nav button {
+        height: 40px;
+        width: 40px;
+        font-weight: 700;
+        border-radius: 50%;
+      }
+
+      nav a {
+        color: #000000de;
+      }
+
+      main button {
+        padding: 8px 12px;
+        border-radius: 2px;
+      }
+
+      main button + button {
+        margin-left: 8px;
+      }
+
+      footer {
+        background-color: #f2f2f2;
+        font-size: 15px;
+      }
+
+      footer a {
+        color: #70757a;
+      }
+
+      footer hr {
+        border: 1px solid #dadce0;
+      }
+
+      footer section {
+        padding: 15px 30px;
+      }
+
+      footer ul {
+        display: inline-block;
+        width: 400px;
+      }
+
+      footer ul + ul {
+        width: calc(100% - 404px);
+        text-align: right;
+      }
+
+      #google-apps {
+        /* background-color: rgba(60,64,67,0.08) */
+        background-color: #3c404314;
+      }
+
+      #profile {
+        background-color: #5c6bc0;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="gmail.html">Gmail</a></li>
+          <li><a href="images.html">Imagens</a></li>
+          <li>
+            <button id="google-apps"><span>.</span></button>
+          </li>
+          <li>
+            <button id="profile"><span>F</span></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <img
+        src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        alt="Logo do Google"
+        height="92px"
+      />
+
+      <form>
+        <input name="search" type="text" />
+        <button type="submit">Pesquisa Google</button>
+        <button type="submit">Estou com sorte</button>
+      </form>
+    </main>
+
+    <footer>
+      <section>
+        <p>Brasil</p>
+      </section>
+
+      <hr />
+
+      <section>
+        <ul>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="marketing.html">Publicidade</a></li>
+          <li><a href="business.html">Negócios</a></li>
+          <li><a href="how-it-works.html">Como funciona a Pesquisa</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="privacy.html">Privacidade</a></li>
+          <li><a href="terms.html"></a>Termos</li>
+          <li><a href="settings.html"></a>Configurações</li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
