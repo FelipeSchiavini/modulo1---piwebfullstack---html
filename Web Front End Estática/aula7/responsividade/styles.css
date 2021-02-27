@@ -1,0 +1,100 @@
+:root {
+  font-size: 62.5%;
+  --h2-size: 4.2rem;
+  --default-margin: 7.2rem 0;
+  --default-padding: 0 1.5rem;
+  --navigation-spacing: 0 0 0 3.6rem;
+  --navigation-font-size: 3rem;
+}
+
+* {
+  font-size: 1rem;
+}
+
+header,
+footer {
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+}
+
+header li,
+footer li {
+  display: inline-flex;
+}
+
+header li + li,
+footer li + li {
+  margin: var(--navigation-spacing);
+}
+
+header a,
+footer a {
+  font-size: var(--navigation-font-size);
+}
+
+main,
+footer,
+h1,
+h2 {
+  margin: var(--default-margin);
+}
+
+main {
+  padding: var(--default-margin);
+}
+
+h1 {
+  font-size: 7.2rem;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+/* h2 {
+  font-size: calc(22px + 0.8vw);
+} */
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  background-color: #f0f0f0;
+  text-align: center;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+@media (max-width: 425px) {
+  :root {
+    --default-margin: 2.2rem 0;
+    --h2-size: 2.4rem;
+    --navigation-spacing: 0 0 0 1.2rem;
+    --navigation-font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+}

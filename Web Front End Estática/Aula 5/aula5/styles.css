@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+body {
+  font-family: "Graphik Webfont", -apple-system, BlinkMacSystemFont, "Roboto",
+    "Droid Sans", "Segoe UI", "Helvetica", Arial, sans-serif;
+}
+
+header,
+main > section > div {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  font-size: 1.4rem;
+  padding: 1rem 0 0;
+}
+
+header img {
+  float: left;
+}
+
+header > div a {
+  padding: 8px 12px;
+  border-radius: 9999px;
+  transition: background 0.2s ease-in-out;
+  transition: background 200ms ease-in-out;
+}
+
+header > div a:hover {
+  background-color: rgba(34, 34, 34, 0.15);
+}
+
+header > nav {
+  clear: both;
+}
+
+header form#search-box {
+  display: inline-block;
+  width: 80%;
+  margin: 0 8px 0 6px;
+}
+
+header form#search-box input {
+  width: 100%;
+  height: 32px;
+  border: 1px solid rgba(34, 34, 34, 0.15);
+  outline: none;
+  padding: 2.2rem;
+  font-size: 1.6rem;
+  border-radius: 24px;
+  background-color: rgba(34, 34, 34, 0.1);
+}
+
+header .product-categories img {
+  border-radius: 50%;
+}
+
+main .category {
+  width: 180px;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  margin: 1.5rem 0;
+}
+
+ul.category-links {
+  /* text-align: left; */
+}
+
+ul.category-links li {
+  display: inline-block;
+}
+
+main > section.product-categories {
+  background-color: #ddebe3;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seletores</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --tooltip-color: steelblue;
+      }
+
+      input::placeholder {
+        color: rgba(0, 0, 0, 0.4);
+      }
+
+      input[type="email"] {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      input:focus {
+        border: 1px solid var(--tooltip-color);
+        outline: none;
+      }
+
+      input:not(:valid) {
+        border: 2px solid red;
+      }
+
+      input:not([type="email"]) {
+        background-color: gray;
+      }
+
+      input:valid {
+        border: 2px solid greenyellow;
+      }
+
+      .puppy {
+        margin-top: 12px;
+        display: inline-flex;
+        position: relative;
+      }
+
+      .puppy::before {
+        --triangle-size: 5px;
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: var(--triangle-size) solid transparent;
+        border-right: calc(var(--triangle-size) * 2) solid var(--tooltip-color);
+        border-bottom: var(--triangle-size) solid transparent;
+
+        top: 6px;
+        margin-left: 4px;
+
+        transform-origin: right;
+      }
+
+      .puppy::before,
+      .puppy::after {
+        position: absolute;
+        left: 100%;
+        transform: scale(0);
+        transition: 0.2s ease-in-out;
+      }
+
+      .puppy::after {
+        margin-left: 12px;
+        padding: 4px 12px;
+
+        content: attr(data-tooltip);
+
+        border-radius: 8px;
+        font-size: 12px;
+        color: #fff;
+        white-space: nowrap;
+        background-color: var(--tooltip-color);
+        transform-origin: left;
+      }
+
+      .puppy:hover::after,
+      .puppy:hover::before {
+        transform: scale(1);
+      }
+
+      .box {
+        margin: 15px;
+        border: 2px dashed black;
+        border-top: 10px solid black;
+        padding: 30px 0;
+        background-color: salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="ex: user@email.com"
+        required
+      />
+
+      <label for="name">Nome:</label>
+      <input type="text" id="name" />
+    </form>
+
+    <div class="puppy" data-tooltip="filhote da raça Corgi">
+      <img
+        src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8ZG9nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+        height="200px"
+      />
+    </div>
+
+    <div class="box">Caixa 1</div>
+  </body>
+</html>
