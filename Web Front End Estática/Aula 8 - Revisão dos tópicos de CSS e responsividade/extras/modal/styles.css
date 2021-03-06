@@ -1,0 +1,100 @@
+* {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --h2-size: 4.2rem;
+  --default-margin: 7.2rem 0;
+  --default-padding: 0 1.5rem;
+  --navigation-spacing: 0 0 0 3.6rem;
+  --navigation-font-size: 3rem;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 7.2rem;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+.main-content header,
+.main-content footer {
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+}
+
+.main-content header li,
+.main-content footer li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.main-content header li + li,
+.main-content footer li + li {
+  margin: var(--navigation-spacing);
+}
+
+.main-content header a,
+.main-content footer a {
+  font-size: var(--navigation-font-size);
+}
+
+.main-content main {
+  padding: var(--default-margin);
+}
+
+.main-content main,
+.main-content footer,
+.main-content h1,
+.main-content h2 {
+  margin: var(--default-margin);
+}
+
+.main-content main {
+  background-color: #f0f0f0;
+  text-align: center;
+  height: 100%;
+}
+
+@media (max-width: 425px) {
+  .main-content :root {
+    --default-margin: 2.2rem 0;
+    --h2-size: 2.4rem;
+    --navigation-spacing: 0 0 0 1.2rem;
+    --navigation-font-size: 1.8rem;
+  }
+  .main-content h1 {
+    font-size: 3.2rem;
+  }
+}

@@ -1,0 +1,93 @@
+.block {
+  width: 250px;
+  height: 150px;
+  background-color: tomato;
+  animation: slide-and-grow 1.2s 2;
+  position: relative;
+}
+
+/* .block:hover::before {
+  opacity: 1;
+} */
+
+.block::before {
+  content: "";
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.6);
+
+  transition: 0.3s;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  animation: blink 1.2s 2;
+}
+
+.text::before {
+  content: "eu venho antes";
+  margin-right: 6px;
+}
+
+.text::after {
+  content: "eu venho depois";
+  margin-left: 6px;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(300px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-and-grow {
+  from {
+    transform: translateX(0) scale(1);
+  }
+
+  50% {
+    transform: translateX(300px) scale(1.2);
+  }
+
+  to {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+/* Evitar qualquer tipo de animação que opere em propriedades que não sejam opacity ou transform */
+@keyframes grow {
+  from {
+    height: 150px;
+  }
+
+  50% {
+    height: 300px;
+  }
+
+  to {
+    transform: 150px;
+  }
+}

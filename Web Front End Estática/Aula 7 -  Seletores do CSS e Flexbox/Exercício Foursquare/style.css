@@ -1,0 +1,338 @@
+:root {
+    font-size: 62.5%;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Monaco","Inconsolata","Fira Mono","Droid Sans Mono","Source Code Pro";;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+
+.intro {
+    margin-top:30px;
+    font-size: 2.55rem;
+    text-align: left;
+    padding-bottom: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+}
+
+nav .foursquare{
+    font-size: 4rem;
+    transition: .3s ease-out;
+
+}
+
+nav .foursquare:hover{
+    color: #33F;
+}
+
+nav .principal-menu{
+    padding-right: 4rem;
+    font-size: 2rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #fff;
+    align-items: center;
+    z-index: 2;
+    box-shadow: 0.0rem 0.2rem 0 rgba(0, 0, 0, 0.01);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+button.log-in {
+    color: #fff;
+    font-weight: 600;
+    background-color: #33f;
+    min-height: 1rem;
+    padding: .5rem 3rem .5rem 1rem;
+    font-family:'Goldman', sans-serif;
+    cursor: pointer;
+    border:none;
+    border-radius: 0;
+    margin-right: 15px;
+
+    transition: .3s ease-out;
+}
+
+button.log-in:hover{
+    box-shadow: 0.5rem 0.3rem 0 rgba(0, 0, 0, 10%);
+    background-color: navy;
+}
+#video{
+    margin-top: 77px;
+    height: 100%;
+    object-position: center;
+    width: 100%;
+    z-index: 1;
+    object-fit: cover;
+    max-height: 380px;
+    filter: brightness(70%);
+}
+
+
+#video-div{
+    max-height: 500px;
+}
+
+button.contact-us {
+    color: #33f;
+    font-weight: 600;
+    background-color:#fff;
+    min-height: 1rem;
+    padding: .5rem 3rem .5rem 1rem;
+    font-family: 'Goldman';
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #33f;
+    border-radius: 0;
+
+    transition: .3s ease-out;
+}
+
+
+button.contact-us:hover{
+    box-shadow: 0.5rem 0.3rem 0 rgba(0, 0, 0, 10%);
+}
+
+.head-starts {
+    margin-top: 50px;
+    display: flex;  
+    width: 100%;
+    justify-content: center;
+    
+}
+
+#container {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro-div{
+    padding-left: 50px;
+    width: 45%;
+    font-weight: 300;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 5rem;
+    padding-left:50px ;
+    width: 45%;
+    text-align: left;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+#our-story {
+    padding: 20px 45px 20px 15px;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+#our-story, #contactus  {
+    padding: 15px 45px 15px 15px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+#flecha{
+    transition: 0.1s ease-in-out;
+    transform: translateX(4px) scaleX(1);
+  }
+  
+.contact-us :hover #flecha {
+    transform: translateX(15px) scaleX(2);
+
+  }
+
+.logos-menu {
+    margin-top: 10%;
+    display: flex;
+    width: 100%;
+    height: 270px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.images-even {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 50%;
+}
+
+.images-odd {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 60%;
+}
+
+.images-sections {
+    margin-left: 10%;
+    margin-top: 80px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.texts-selections {
+    width: 40%;
+}
+
+.row-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-reversed-layout{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texts-selections p {
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+
+.texts-old-font {
+    font-family: SometypeMono-Medium,Monaco,Inconsolata,"Fira Mono","Droid Sans Mono","Source Code Pro",monospace,monospace;
+    font-size: 1.4rem;
+}
+
+.texts-selections a {
+    font-size: 1.4rem;
+}
+
+.texts-selections a{
+    padding-right: 20px;
+    color: #33f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.images-sections > h2 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.experts > h3 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.experts {
+    display: flex;
+    justify-content: center;
+}
+
+.experts > div {
+    
+    margin-top: 40px;
+    padding: 20px 40px 20px 20px;
+    height: 150px;
+    width: 60%;
+    color: #fff;
+    background-color: #33F;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+button.contact {
+    color: #33f;
+    margin: 30px 0;
+    font-weight: 600;
+    background-color:#fff;
+    padding: .5rem 3rem .5rem 1rem;
+    font-family: 'Goldman';
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #33f;
+    border-radius: 0;
+    text-align: left;
+    transition: .3s ease-out;
+}
+
+
+button.contact:hover{
+    box-shadow: 0.5rem 0.3rem 0 rgba(247, 241, 241, 0.5);
+    z-index: 2;
+}
+
+
+.box {
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+.bg-content {
+    position: relative; 
+    width: 40%;
+    margin: auto;
+    z-index: 2;
+    background-color: black;
+    color: #fff;
+    top: 250px;  
+}
+
+.background {
+
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    background-image: url("http://images.ctfassets.net/exg8oyvb0wfw/5fs2JIWMXbdtB6R6sWdoVs/477f592095dfd5783234df988be763a9/xiang-ji-AR8XAYZVB7Q-unsplash__1_.jpg?w=1440&q=75");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+    
+}
+
+
+

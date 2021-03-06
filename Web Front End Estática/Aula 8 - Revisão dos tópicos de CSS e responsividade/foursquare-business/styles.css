@@ -1,0 +1,18 @@
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.block + .block {
+  margin-top: 36px;
+}
+
+.block:nth-child(2n) {
+  flex-direction: row-reverse;
+}

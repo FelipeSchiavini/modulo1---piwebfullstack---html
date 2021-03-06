@@ -1,0 +1,263 @@
+:root {
+  font-size: 62.5%;
+  --default-font-size: 1.6rem;
+  --default-border-radius: 0.8rem;
+  --button-font-color: #fff;
+  --button-default-padding: 1.2rem 1.4rem;
+  --accent-color: #2a5bd7;
+  --accent-color-hover: #0236b9;
+  --title-color: #252628;
+  --sub-title-color: #56575b;
+  --text-color: #36383b;
+}
+
+body {
+  font-size: var(--default-font-size);
+  color: var(--text-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: #000;
+}
+
+h2,
+p {
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+.content {
+  width: 100%;
+  max-width: 1120px;
+  margin: auto;
+}
+
+body > header {
+  margin-top: 24px;
+}
+
+header > .content {
+  display: flex;
+  justify-content: space-between;
+
+  > ul {
+    display: flex;
+  }
+}
+
+#main-menu {
+  position: relative;
+
+  > ul {
+    display: flex;
+    padding: 0 4.8rem;
+
+    > li {
+      position: relative;
+      padding: 11px 16px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding-bottom: 3.8rem;
+        border-bottom: 2px solid var(--accent-color);
+        transform: scaleX(0);
+        transition: 0.2s ease-in-out;
+        transform-origin: center;
+      }
+
+      &:hover {
+        &::after {
+          transform: scaleX(1);
+        }
+        .hover-menu {
+          opacity: 1;
+          pointer-events: all;
+          transform: translateY(0px);
+        }
+      }
+
+      + li {
+        margin-left: 18px;
+      }
+    }
+  }
+
+  a.active {
+    color: var(--accent-color);
+  }
+}
+
+#side-menu {
+  li {
+    padding: 11px 16px;
+  }
+}
+
+.hover-menu {
+  width: 560px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease-in-out;
+  transform: translateY(6px);
+
+  position: absolute;
+  left: -4.8rem;
+  top: calc(3.8rem + 2px);
+
+  ul {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  li {
+    padding: 18px 15px;
+
+    &:hover {
+      background-color: #f5f6f7;
+
+      i,
+      h3 {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  a {
+    display: flex;
+
+    > section {
+      margin-left: 20px;
+      font-size: 1.3rem;
+    }
+
+    i {
+      color: #777;
+      font-size: 24px;
+    }
+  }
+}
+
+.button-like {
+  border-radius: var(--default-border-radius);
+  padding: var(--button-default-padding);
+  background-color: var(--accent-color);
+  color: var(--button-font-color);
+}
+
+.hero-grid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-areas:
+    ". . image"
+    "title . image"
+    "actions . image"
+    ". . image";
+
+  > img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    grid-area: pic1;
+
+    & + img {
+      grid-area: pic2;
+    }
+
+    & + img + img {
+      grid-area: pic3;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas:
+      "image"
+      "title"
+      "actions";
+
+    > header {
+      grid-area: title;
+    }
+
+    > footer {
+      grid-area: actions;
+    }
+
+    > aside {
+      grid-area: image;
+    }
+  }
+}
+
+.hero-grid > header {
+  grid-area: title;
+
+  h1 {
+    font-size: 5.6rem;
+
+    @media (max-width: 1024px) {
+      font-size: 4rem;
+    }
+  }
+}
+
+.hero-grid > footer {
+  margin-top: 3rem;
+  grid-area: actions;
+
+  a {
+    display: block;
+    width: 220px;
+    text-align: center;
+
+    &:nth-child(1) {
+      font-size: 2rem;
+      padding: 2rem 0;
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.hero-grid aside {
+  grid-area: image;
+
+  img {
+    height: 480px;
+    width: 500px;
+    // object-position: -55%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --default-font-size: 1.3rem;
+  }
+}

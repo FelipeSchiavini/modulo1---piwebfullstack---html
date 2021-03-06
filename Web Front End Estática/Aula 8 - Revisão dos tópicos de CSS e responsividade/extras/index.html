@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="text"] {
+        margin-top: 12px;
+      }
+
+      input::-webkit-calendar-picker-indicator {
+        /* display: none; */
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <select name="sports" id="">
+        <optgroup label="artes marcias">
+          <option value="orange">orange</option>
+          <option value="apple">apple</option>
+          <option value="grape">grape</option>
+        </optgroup>
+        <optgroup label="azuis">
+          <option value="framboesa">framboesa</option>
+          <option value="mirtilo">mirtilo</option>
+        </optgroup>
+        <optgroup></optgroup>
+      </select>
+
+      <label for="browsers"></label>
+      <input name="browsers" type="text" list="browsers" />
+      <datalist id="browsers">
+        <option value="Chrome"></option>
+        <option value="Firefox"></option>
+        <option value="Internet Explorer"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+    </form>
+  </body>
+</html>
