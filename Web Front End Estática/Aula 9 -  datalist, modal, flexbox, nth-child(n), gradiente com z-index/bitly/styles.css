@@ -95,7 +95,7 @@ header > .content > ul {
   left: 0;
   top: 0;
   width: 100%;
-  padding-bottom: 3.8rem;
+  padding-bottom: 2 3.8rem;
   border-bottom: 2px solid var(--accent-color);
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -103,6 +103,8 @@ header > .content > ul {
   transition: 0.2s ease-in-out;
   -webkit-transform-origin: center;
           transform-origin: center;
+  transition: 0.2s ease-in-out;
+  transform-origin: center;
 }
 
 #main-menu > ul > li:hover::after {
@@ -290,3 +292,4 @@ header > .content > ul {
     --default-font-size: 1.3rem;
   }
 }
+/*# sourceMappingURL=styles.css.map */

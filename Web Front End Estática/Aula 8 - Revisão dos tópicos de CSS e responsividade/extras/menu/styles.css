@@ -1,0 +1,21 @@
+.menu {
+    color: brown;
+    background-color: aqua;
+    padding: 20px;
+    margin: 0;
+    display: none;
+}
+
+.menuitem {
+    list-style-type: none;
+}
+
+#meuMarcador {
+    display: none;
+}
+
+
+#meuMarcador:checked + ul{
+    display: block;
+    width: 100px;
+}

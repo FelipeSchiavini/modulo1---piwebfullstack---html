@@ -315,7 +315,7 @@ button.contact:hover{
     z-index: 2;
     background-color: black;
     color: #fff;
-    top: 250px;  
+    top: 250px;
 }
 
 .background {
@@ -331,7 +331,6 @@ button.contact:hover{
     top: 0;
     left: 0;
     z-index: 1; 
-    
 }
 
 
