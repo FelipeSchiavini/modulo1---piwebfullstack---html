@@ -69,16 +69,56 @@
     </header>
     <main>
       <div class="bg">
-        <div class="animation">
-          <h3>ACADEMIA HEALTHY SPORTS</h3>
-          <p>
-            A dança desempenha um papel importante: ela se conecta a memórias,
-            fornece entretenimento e emoção.
-          </p>
-          <button class="but-insc">
-            <a class="button-insc" href="inscrever.html">Se Inscrever</a>
-          </button>
-        </div>
+        <section class="form-sec">
+          <form class="form">
+            <h1>FORMULÁRIO DE INSCRIÇÃO</h1>
+            <label for="username">Usuário:</label>
+            <input
+              type="text"
+              name="nome"
+              id="username"
+              placeholder="ex: fulano123"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+
+            <label for="password">Sua senha:</label>
+            <input
+              type="password"
+              name="senha"
+              id="password"
+              placeholder="*********"
+              required
+            />
+            <div class="date">
+              <label for="birthday">Data de nascimento</label>
+              <input
+                required
+                type="date"
+                name="dataDeNascimento"
+                id="birthday"
+              />
+            </div>
+
+            <label for="location">Unidade:</label>
+            <select name="unidade" id="location" required>
+              <option selected disabled value="">Selecione uma unidade</option>
+              <option value="Mooca">Mooca</option>
+              <option value="Vila Prudente">Vila Prudente</option>
+              <option value="Moema">Moema</option>
+              <option value="Veleiros">Veleiros</option>
+              <option value="Vila Olímpia">Vila Olímpia</option>
+            </select>
+            <div class="form-button">
+              <button class="form-button" type="subit">
+                Finalizar Cadastros
+              </button>
+              <button class="form-button" type="reset">Resetar</button>
+            </div>
+          </form>
+        </section>
       </div>
     </main>
     <footer class="footer-menu">

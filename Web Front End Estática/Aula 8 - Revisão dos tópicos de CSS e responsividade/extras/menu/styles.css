@@ -14,8 +14,7 @@
     display: none;
 }
 
-
-#meuMarcador:checked + ul{
+#meuMarcador:checked + .menu{
     display: block;
     width: 100px;
 }

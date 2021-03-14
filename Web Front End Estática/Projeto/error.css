@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    border: 2px solid black;
+    border-radius: 20%;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+
+    animation-name: minhaanimacao;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+h1 {
+    font-size: 3rem;
+    
+}
+
+body{
+    width: 100%;
+    height: 100%;
+ 
+    animation-name: minhaanimacao;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+ }
+
+ section{
+    width: 100vw;
+    height: 100vw;
+ }
+
+.error {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 200px;
+    background-color: blueviolet;
+    border-radius: 10%;
+
+    animation-name: animacaoErro;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacaoErro{
+    from{
+        top: 200px;
+        left: 20px;
+    }
+    10% {
+        top:90px;
+        left:70%;
+        background-color: red;
+    }
+    20% {
+        top:100%;
+        left:60%;
+    }
+    40% {
+        bottom:80px;
+        right: 100%;
+        transform: rotate(80deg);
+        background-color: aquamarine;
+    }
+    60% {
+        top:100px;
+        right:100%;
+    }
+    10% {
+        bottom:10px;
+        right: 20px;
+    }
+    70% {
+        top:200px;
+        left:100px;
+    }
+    90% {
+        top: 150px;
+        left:200px;
+        transform: rotate(360deg);
+    }
+    to {
+        top: 200px;
+        left: 20px;
+    }
+}
+
+
+ @keyframes minhaanimacao{
+    from {
+       background-color: red;
+    }
+
+    20% {
+        background-color: yellow;
+    }
+    40% {
+        background-color: purple;
+    }
+    60% {
+        background-color: green;
+    }
+    80% {
+        background-color: gray;
+    }
+
+    to {
+       background-color: blue;
+    }
+ }
